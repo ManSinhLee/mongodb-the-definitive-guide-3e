@@ -1,0 +1,1 @@
+db.processes.findOneAndUpdate({"status" : "READY"}, {"$set" : {"status" : "RUNNING"}}, {"sort" : {"priority" : -1}, "returnNewDocument": true})

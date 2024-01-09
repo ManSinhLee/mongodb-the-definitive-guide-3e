@@ -3,7 +3,7 @@ var connectTo = function(port, dbname) {
  port = 27017;
  }
  if (!dbname) {
- dbname = "test";
+ dbname = "movies";
  }
  db = connect("localhost:"+port+"/"+dbname);
  return db;
